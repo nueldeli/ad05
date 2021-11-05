@@ -35,6 +35,13 @@ INSTALLED_APPS = [
     # Page app
     'page.apps.PageConfig',
     # ---
+    # Membership
+    'membership.apps.MembershipConfig',
+    # ---
+    # Ckeditor
+    'ckeditor',
+    'ckeditor_uploader',
+    #---
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -122,3 +129,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'ad05/static')]
 STATIC_URL = '/static/'
+
+# Media stuff goes here
+CKEDITOR_UPLOAD_PATH = 'uploads/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'ad05/media')
+MEDIA_URL = '/media/'
+
+# Login and logout stuff
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
