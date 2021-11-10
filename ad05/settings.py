@@ -136,5 +136,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'ad05/media')
 MEDIA_URL = '/media/'
 
 # Login and logout stuff
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/membership/user_profile'
 LOGOUT_REDIRECT_URL = '/'
